@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test_chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="regressionTestScripts.InvalidLogin">
+        <methods>
+          <include name="invalidLogin"/>
+          <include name="closeAppn"/>
+          <include name="openAppn"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- regressionTestScripts.InvalidLogin -->
+    </classes>
+  </test> <!-- Test_chrome(failed) -->
+  <test thread-count="5" name="Test_firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="regressionTestScripts.InvalidLogin">
+        <methods>
+          <include name="invalidLogin"/>
+          <include name="closeAppn"/>
+          <include name="openAppn"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- regressionTestScripts.InvalidLogin -->
+    </classes>
+  </test> <!-- Test_firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

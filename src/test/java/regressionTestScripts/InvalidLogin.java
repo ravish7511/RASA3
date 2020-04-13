@@ -28,7 +28,7 @@ public class InvalidLogin extends Generic_Test {
 		test.pass("successfully clicked on login");
 		lp.verifyErrmsg();
 		test.pass("error message displayed");
-		lp.verifyTitle(5, "abcd");
+		lp.verifyTitle(10, "Login");
 		Assert.assertEquals(driver.getTitle(), eTitle);
 		test.pass("title verified successfully");
 		test.info("test ended");

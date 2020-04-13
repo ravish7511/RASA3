@@ -58,6 +58,7 @@ public class Generic_Test {
 		}
 
 		driver.manage().timeouts().implicitlyWait(fm.getImplicityWait(), TimeUnit.SECONDS);
+		
 
 	}
 
